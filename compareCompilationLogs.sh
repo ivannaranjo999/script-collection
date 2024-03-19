@@ -2,6 +2,8 @@
 
 #diff <(sed 's/[0-9]//g' beforeSPR-oldBoards-warnings/MasterLog.txt) <(sed 's/[0-9]//g' afterSPR-oldBoards-warnings/MasterLog.txt)
 
+if test "$#" -ne 2; then echo "Pass two directories to compare logs"; exit 1; fi
+
 echo $1
 echo $2
 
