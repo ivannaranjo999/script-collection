@@ -15,7 +15,7 @@ cd $2
 
 for fn in $files; do
 	mkdir -p $(dirname $fn)
-	cp ../SPR1373_branch/rtmc/$fn $(dirname $fn)
+	cp ../$1/$fn $(dirname $fn)
 	echo "$(basename $fn) copied"	
 done
 
